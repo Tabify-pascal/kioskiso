@@ -1,0 +1,47 @@
+:root {
+  --w: 1280px;
+  --h: 800px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; margin: 0; }
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: url("Images/Background.png") center / cover no-repeat;
+  position: relative;
+}
+
+.screen {
+  width: var(--w);
+  height: var(--h);
+  display: grid;
+  place-items: center;
+}
+
+.logoBox {
+  position: relative;
+  display: inline-block;
+}
+
+.logo {
+  display: block;
+  max-width: 100%;
+  border: 4px solid #fff;
+  border-radius: 8px;
+}
+
+.time {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-align: center;
+  line-height: 1.3;
+}
